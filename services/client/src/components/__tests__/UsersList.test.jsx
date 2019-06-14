@@ -7,15 +7,15 @@ import UsersList from '../UsersList';
 const users = [
   {
     'active': true,
-    'email': 'abelthf@gmail.com',
+    'email': 'josuehr9@gmail.com',
     'id': 1,
-    'username': 'fredy'
+    'username': 'david'
   },
   {
     'active': true,
-    'email': 'abel.huanca@upeu.edu.pe',
+    'email': 'josuehuanca@upeu.edu.pe',
     'id': 2,
-    'username': 'abel'
+    'username': 'josue'
   }
 ];
 
@@ -23,7 +23,7 @@ test('UsersList renders properly', () => {
   const wrapper = shallow(<UsersList users={users}/>);
   const element = wrapper.find('h4');
   expect(element.length).toBe(2);
-  expect(element.get(0).props.children).toBe('fredy');
+  expect(element.get(0).props.children).toBe('david');
 });
 
 test('UsersList renders a snapshot properly', () => {
